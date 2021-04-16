@@ -4,10 +4,13 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/recipes' do
-    erb :recipes, locals: { recipes: ['this', 'and', 'that'] }
+    recipes = RecipesRepo.all
+
+    erb :recipes, locals: { recipes: recipes }
   end
 
   get '/recipes/:id' do
-    json({ title: 'not yet' })
+    recipe = RecipesRepo.find(id)
+    erb :recipes, locals: { recipes: [recipe] }
   end
 end

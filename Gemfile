@@ -22,3 +22,5 @@ end
 group :production do
   gem 'unicorn'
 end
+
+gem "dry-container", "~> 0.7.2"
