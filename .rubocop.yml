@@ -31,6 +31,9 @@ Style/FrozenStringLiteralComment:
 Style/FormatString:
   Enabled: false
 
+Style/ModuleFunction:
+  Enabled: false
+
 AllCops:
   Exclude:
     - "spec/spec_helper.rb"

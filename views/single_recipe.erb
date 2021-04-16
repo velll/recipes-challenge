@@ -1,0 +1,28 @@
+
+<div class="single-recipe-container">
+  <div>
+    <figure class="image is-4by3">
+      <img src="<%= recipe.image_url %>" alt="<%= recipe.title %>">
+    </figure>
+  </div>
+  <div class="recipe-details">
+    <h4 class="title is-4"><%= recipe.title %> </h4>
+    <% if recipe.chef %>
+      <p class="subtitle">by <%= recipe.chef %><p>
+    <% end %>
+
+    <% if recipe.tags %>
+      <div>
+        <% recipe.tags.each do |tag| %>
+          <span class="tag is-primary"><%= tag %></span>
+        <% end %>
+      </div>
+    <% end %>
+
+    <p><%= recipe.description %></p>
+    
+  </div>
+</div>
+
+
+

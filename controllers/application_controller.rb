@@ -10,7 +10,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/recipes/:id' do
-    recipe = RecipesRepo.find(id)
-    erb :recipes, locals: { recipes: [recipe] }
+    recipe = RecipesRepo.find(params[:id])
+    erb :single_recipe, locals: { recipe: recipe }
   end
 end

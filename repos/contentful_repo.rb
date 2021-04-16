@@ -16,7 +16,7 @@ class ContentfulRepo
 
     def find(id, query = {})
       result = entry(id, final_query(query))
-      raise NotFoundError unless result
+      raise Sinatra::NotFound unless result
 
       coerce_single_entry(result)
     end
@@ -50,6 +50,4 @@ class ContentfulRepo
       raise NotImplementedError, 'Abstract coerce not implemented'
     end
   end
-
-  class NotFoundError < StandardError; end
 end
