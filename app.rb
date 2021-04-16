@@ -1,4 +1,4 @@
-$LOAD_PATH.unshift('lib') unless $LOAD_PATH.include?('server')
+$LOAD_PATH.unshift('lib') unless $LOAD_PATH.include?('lib')
 $LOAD_PATH.unshift(__dir__) unless $LOAD_PATH.include?(__dir__)
 
 require 'pry' if ['development', 'test'].include?(ENV['RACK_ENV'])
