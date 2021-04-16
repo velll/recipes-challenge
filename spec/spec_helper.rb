@@ -7,6 +7,7 @@ require 'rspec'
 require 'rack/test'
 
 require 'pry'
+require 'securerandom'
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
