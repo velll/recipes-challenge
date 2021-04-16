@@ -10,6 +10,7 @@ gem 'sinatra', '~> 2.1'
 group :test, :development do
   gem 'dotenv', '~> 2.7'
   gem 'pry'
+  gem 'rack-test', '~> 1.1'
   gem 'rspec', '~> 3.10'
 end
 

@@ -1,0 +1,39 @@
+Bundler/OrderedGems:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/MutableConstant:
+  Enabled: false
+
+Style/IfUnlessModifier:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/LambdaCall:
+  Enabled: false
+
+Style/ParallelAssignment:
+  Enabled: false
+
+Style/WordArray:
+  EnforcedStyle: brackets
+
+Metrics/MethodLength:
+  Max: 15
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/FormatString:
+  Enabled: false
+
+AllCops:
+  Exclude:
+    - "spec/spec_helper.rb"
+    - "unicorn.rb"
+    - "Gemfile"
+    - "Rakefile"

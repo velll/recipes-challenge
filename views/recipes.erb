@@ -1,0 +1,9 @@
+<% if recipes.empty? %>
+  There aren't any recipes really. Sorry.
+<% else %>
+  <h2 class="title">Cool recipes here<h2>
+  <% recipes.each do |recipe| %>
+    <%= recipes.inspect %>
+  <% end %>
+<% end %>
+
