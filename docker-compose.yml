@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  recipes:
+    build: .
+    image: contentful-recipes
+    container_name: recipes
+    ports:
+      - 127.0.0.1:8080:8080
+    restart: always
+    environment:
+      - RACK_ENV=production
+    env_file:
+      - .env
